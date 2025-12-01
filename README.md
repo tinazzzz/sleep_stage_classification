@@ -66,9 +66,11 @@ The final output shapes is as follows:
 
 We compare two architectures under identical pipelines.
 
-**Model Architectures**
-![CNN-LSTM Architecture](results/diagrams/cnn_lstm_arch.png)
-![CNN-Transformer Architecture](results/diagrams/cnn_transformer_arch.png)
+**Model Architecture: CNN-LSTM**
+<img src="results/diagrams/cnn_lstm_arch.png" alt="CNN-LSTM Architecture" width="600">
+
+**Model Architecture: CNN-Transformer**
+<img src="results/diagrams/cnn_transformer_arch.png" alt="CNN-Transformer Architecture" width="600">
 
 Model training code:
 - CNN-LSTM: pipeline/train_cnn_lstm_ipynb
