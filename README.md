@@ -91,6 +91,19 @@ Per-class F1:
 - N3: 0.75
 - REM: 0.75
 
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.95      0.97    285433
+           1       0.36      0.61      0.45     21522
+           2       0.88      0.74      0.80     69132
+           3       0.65      0.88      0.75     13039
+           4       0.69      0.81      0.75     25835
+
+    accuracy                           0.89    414961
+   macro avg       0.71      0.80      0.74    414961
+weighted avg       0.91      0.89      0.90    414961
+
 Confusion Matrix:
 ![CNN-LSTM Confusion Matrix](results/diagrams/cnn_lstm_cm.png)
 
@@ -104,6 +117,19 @@ Per-class F1:
 - N2: 0.81
 - N3: 0.76
 - REM: 0.74
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.94      0.97    285433
+           1       0.34      0.61      0.44     21522
+           2       0.87      0.76      0.81     69132
+           3       0.70      0.82      0.76     13039
+           4       0.69      0.78      0.74     25835
+
+    accuracy                           0.88    414961
+   macro avg       0.72      0.78      0.74    414961
+weighted avg       0.91      0.88      0.89    414961
 
 Confusion Matrix:
 ![CNN-Transformer Confusion Matrix](results/diagrams/cnn_transformer_cm.png)
@@ -124,9 +150,11 @@ Transformers do not outperform LSTMs when given only single-epoch EEG input. Tra
 
 1. Create a virtual environment:
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 2. Download the Sleep-EDFx dataset from https://physionet.org/content/sleep-edfx/1.0.0/ and place under raw_data/
 
